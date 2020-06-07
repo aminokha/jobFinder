@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent toSignIn = new Intent(MainActivity.this,SignInActivity.class);
                 //this method for start activity SignInActivity
                 startActivity(toSignIn);
+
                 //this method for finish MainActivity
                 finish();
             }
