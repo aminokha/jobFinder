@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "216566747802",
+    "firebase_url": "https://job-finder-ab4aa.firebaseio.com",
+    "project_id": "job-finder-ab4aa",
+    "storage_bucket": "job-finder-ab4aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216566747802:android:c69527e0c4c9c8d13c8523",
+        "android_client_info": {
+          "package_name": "com.example.jobfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216566747802-ogdpgjcmh11dg77lj8pufmtqtb5bda1m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jobfinder",
+            "certificate_hash": "e9e8f98e5016bc37c4e18531eab6a9a5ec24cc9f"
+          }
+        },
+        {
+          "client_id": "216566747802-k52r1c7ijcg8c08rq789h7felrqr077u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFYsAiz7bEimtIiOecNe1mfWKy8gAKLvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216566747802-k52r1c7ijcg8c08rq789h7felrqr077u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
