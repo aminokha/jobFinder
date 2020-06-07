@@ -1,33 +1,48 @@
 package com.example.jobfinder.Main;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.jobfinder.R;
 
-import static com.example.jobfinder.Model.Constants.SPLASH_DISPLAY_LENGTH;
+import androidx.appcompat.app.AppCompatActivity;
+
+import static com.example.jobfinder.Model.Constants.CHECK_USER_FOR_TYPE_REGISTER;
+import static com.example.jobfinder.Model.Constants.TYPE_SEARCH_FOR_WORK;
+import static com.example.jobfinder.Model.Constants.TYPE_WORKER;
 
 public class MainActivity extends AppCompatActivity {
-
+    Button searchForJob, Worker;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // I will added new handler to start the Login activity and close splash screen after some second
-        new Handler().postDelayed(new Runnable(){
+        initViews();
+        Worker.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void run() {
-                //Create an Intent that will start the Sign in-Activity.
-                Intent toSignIn = new Intent(MainActivity.this,SignInActivity.class);
-                //this method for start activity SignInActivity
-                startActivity(toSignIn);
-                //this method for finish MainActivity
-                finish();
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SignupActivity.class);
+                //CHECK_USER_FOR_TYPE_REGISTER this constant in Constant class i m created it
+                intent.putExtra(CHECK_USER_FOR_TYPE_REGISTER, TYPE_WORKER);
+                startActivity(intent);
             }
+        });
+        searchForJob.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SignupActivity.class);
+                //CHECK_USER_FOR_TYPE_REGISTER this constant in Constant class i m created it
+                intent.putExtra(CHECK_USER_FOR_TYPE_REGISTER, TYPE_SEARCH_FOR_WORK);
+                startActivity(intent);
+            }
+        });
 
-        }, /* This constant is length display*/SPLASH_DISPLAY_LENGTH);
+    }
+
+    private void initViews() {
+        searchForJob = findViewById(R.id.searchforjob);
+        Worker = findViewById(R.id.worker);
     }
 }

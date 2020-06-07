@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">JobFinder</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="password">Password</string>
+    <string name="phone_number">Phone number</string>
+    <string name="already_have_a_account">Already have a account ?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="name">First name and Last name</string>
+    <string name="you_don_t_have_account">You don\'t have account</string>
 </resources>
