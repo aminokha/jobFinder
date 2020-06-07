@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,9 +17,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main.SignInActivity" />
-        <activity android:name=".Main.SignpActivity" />
-        <activity android:name=".Home.HomeActivity"></activity>
+        <activity android:name=".Home.HomeActivity" />
         <activity android:name=".Main.SignupActivity" />
+        <activity android:name=".Searcher.SignUpSearchr" />
+        <activity android:name=".Searcher.SignInSearcher" />
+        <activity android:name=".Worker.WorkerSignup" />
+        <activity android:name=".Searcher.SignUpSearcher" />
+        <activity android:name=".Worker.WorkerSignin"></activity>
     </application>
 
 </manifest>

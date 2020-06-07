@@ -1,83 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".Main.SignupActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:orientation="vertical">
-
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/edtPhoneUP"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/phone_number"
-            android:inputType="phone"
-            android:textColorHint="@android:color/black"
-            android:textSize="30sp"
-            app:met_baseColor="@android:color/black"
-            app:met_floatingLabel="highlight"
-            app:met_maxCharacters="11"
-            app:met_minCharacters="3"
-            app:met_primaryColor="@android:color/black"
-            app:met_singleLineEllipsis="true" />
-
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/edtNameUP"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/name"
-            android:inputType="textPersonName"
-            android:textColorHint="@android:color/black"
-            android:textSize="30sp"
-            app:met_baseColor="@android:color/black"
-            app:met_floatingLabel="highlight"
-            app:met_minCharacters="3"
-            app:met_primaryColor="@android:color/black"
-            app:met_singleLineEllipsis="true" />
-
-        <com.rengwuxian.materialedittext.MaterialEditText
-            android:id="@+id/edtPasswordUP"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            android:textColorHint="@android:color/black"
-            android:textSize="34sp"
-            app:met_baseColor="@android:color/black"
-            app:met_floatingLabel="highlight"
-            app:met_maxCharacters="15"
-            app:met_minCharacters="3"
-            app:met_primaryColor="@android:color/black"
-            app:met_singleLineEllipsis="true" />
-
-    </LinearLayout>
-
-
-    <Button
-        android:id="@+id/btnSignUP"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/to_sign_in"
-        android:layout_margin="8dp"
-        android:background="@drawable/style_button"
-        android:text="@string/sign_up"
-        android:textColor="@android:color/black" />
-
-    <TextView
-        android:id="@+id/to_sign_in"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="@string/already_have_a_account"
-        android:textSize="16sp" />
 
 </RelativeLayout>

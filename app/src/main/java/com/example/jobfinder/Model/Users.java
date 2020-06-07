@@ -6,6 +6,8 @@ public class Users {
     public String phone;
     public String inStaff;
 
+    public Users() {
+    }
     public Users(String name, String password, String inStaff) {
         this.name = name;
         this.password = password;
