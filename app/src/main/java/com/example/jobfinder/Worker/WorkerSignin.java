@@ -13,7 +13,7 @@ import com.example.jobfinder.Main.SignupActivity;
 import com.example.jobfinder.Model.Common;
 import com.example.jobfinder.Model.Users;
 import com.example.jobfinder.R;
-import com.example.jobfinder.Searcher.SignUpSearcher;
+import com.example.jobfinder.Searcher.SignInSearcher;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -47,7 +47,7 @@ public class WorkerSignin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Define intent to start activity sign up
-                Intent toSignUp = new Intent(WorkerSignin.this, SignUpSearcher.class);
+                Intent toSignUp = new Intent(WorkerSignin.this, SignInSearcher.class);
                 startActivity(toSignUp);
             }
         });

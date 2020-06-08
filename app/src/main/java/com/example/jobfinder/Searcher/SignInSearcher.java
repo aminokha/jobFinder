@@ -45,7 +45,7 @@ public class SignInSearcher extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Define intent to start activity sign up
-                Intent toSignUp = new Intent(SignInSearcher.this, SignUpSearcher.class);
+                Intent toSignUp = new Intent(SignInSearcher.this, SignInSearcher.class);
                 startActivity(toSignUp);
             }
         });

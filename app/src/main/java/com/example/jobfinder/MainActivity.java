@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.example.jobfinder.Searcher.SignUpSearcher;
+import com.example.jobfinder.Searcher.SignInSearcher;
 import com.example.jobfinder.Worker.WorkerSignup;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         searchForJob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SignUpSearcher.class);
+                Intent intent = new Intent(MainActivity.this, SignInSearcher.class);
                 startActivity(intent);
             }
         });
